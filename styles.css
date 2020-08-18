@@ -160,6 +160,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .attribution a {
@@ -178,7 +179,7 @@ body {
 
 /************************* DESKTOP STYLES **************************/
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .article-container {
     flex-direction: row;
     max-width: unset;
@@ -193,6 +194,10 @@ body {
     border-bottom-left-radius: 15px;
   }
 
+  .article-title {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
 
   .article-content-container {
     width: 415px;
@@ -204,6 +209,7 @@ body {
 
   .article-footer {
     padding: 20px 30px 30px;
+    overflow: visible;
   }
 
   .avatar-image {
@@ -215,8 +221,50 @@ body {
     font-size: 13px;
   }
 
-  .article-title {
-    font-size: 1.2rem;
-    margin-top: 0;
+  .share-container {
+    right: -85px;
+    left: unset;
+    top: -60px;
+    width: 230px;
+    height: unset;
+    padding: 15px 20px;
+    justify-content: center;
+    border-radius: 10px;
   }
+
+  .share-container::after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    position: absolute;
+    top: 100%;  
+
+  }
+
+  .share-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 13px;
+  }
+
+  .share-container .icon {
+    margin-left: 10px;
+  }
+
+  .share-icon:hover {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    transform: scale(1.15, 1.15);
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
+
+
+
 }
