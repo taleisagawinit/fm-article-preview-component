@@ -8,6 +8,9 @@ body {
   background-color: hsl(210, 46%, 95%);
   display: flex;
   flex-direction: column;
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+  color: hsl(217, 19%, 35%);
 }
 
 .article-container {
@@ -22,6 +25,15 @@ body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   max-width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: 100%;
+  background-image: url('./images/drawers.jpg');
+}
+
+.article-title {
+  font-size: 1.095rem;
+  line-height: 1.5;
 }
 
 .article-content {
@@ -31,13 +43,19 @@ body {
 .article-content p {
   margin: 0;
   padding: 0;
+  color: hsl(214, 17%, 51%);
+  line-height: 1.75;
 }
+
+
+/************************* FOOTER MOBILE STYLES **************************/
 
 .article-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .author-info {
@@ -46,10 +64,33 @@ body {
   align-items: center;
 }
 
+.article-author {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
 .avatar-image {
   border-radius: 100%;
   height: 50px;
   width: 50px;
+  margin-right: 15px;
+}
+
+.article-date {
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+  margin: 0;
+}
+
+.share-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(./images/icon-share.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 100%;
 }
 
 
